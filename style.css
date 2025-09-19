@@ -1,4 +1,3 @@
-/* Globale stijlen (overgenomen van de vorige versie) */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -7,7 +6,6 @@ body {
     color: #333;
     line-height: 1.6;
 }
-
 .main-header {
     background-color: #004d00;
     color: #fff;
@@ -15,7 +13,6 @@ body {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 .header-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -25,21 +22,17 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
-
 .site-title {
     margin: 0;
     font-size: 2.5rem;
     font-weight: bold;
 }
-
 .main-nav {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
-
-/* Animatie voor navigatie items */
 .nav-item {
     color: #fff;
     text-decoration: none;
@@ -49,38 +42,29 @@ body {
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
-
 .nav-item:hover, .nav-item.active {
     background-color: #003300;
-    transform: scale(1.05); /* Lichte vergroting bij hover */
+    transform: scale(1.05);
 }
-
-/* --- Hoofdpagina Stijlen --- */
-
-/* Hero Sectie */
 .hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/hero.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
     padding: 150px 20px;
     margin-bottom: 40px;
-    animation: fadeIn 1s ease-in-out; /* Animatie voor de hele sectie */
+    animation: fadeIn 1s ease-in-out;
 }
-
 .hero-content h2 {
     font-size: 4rem;
     margin: 0 0 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
-
 .hero-content p {
     font-size: 1.5rem;
     max-width: 800px;
     margin: 0 auto 30px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
-
-/* Animatie voor de knop in de hero-sectie */
 .hero-button {
     display: inline-block;
     background-color: #004d00;
@@ -92,13 +76,10 @@ body {
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
-
 .hero-button:hover {
     background-color: #003300;
-    transform: translateY(-3px); /* Beweegt iets omhoog bij hover */
+    transform: translateY(-3px); 
 }
-
-/* Info Grid Sectie */
 .info-grid-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -108,8 +89,6 @@ body {
     padding: 0 20px;
     text-align: center;
 }
-
-/* Animatie voor de infokaarten */
 .info-grid-item {
     background-color: #fff;
     padding: 30px;
@@ -117,20 +96,16 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .info-grid-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
-
 .info-grid-item i {
     font-size: 2.5rem;
     color: #004d00;
     margin-bottom: 15px;
     animation: iconBounce 1s infinite alternate; /* Subtiele op en neer animatie */
 }
-
-/* Animatie voor de links in de infokaarten */
 .grid-link {
     display: inline-block;
     margin-top: 15px;
@@ -139,19 +114,15 @@ body {
     text-decoration: none;
     transition: color 0.3s ease, transform 0.2s ease;
 }
-
 .grid-link:hover {
     color: #003300;
-    transform: translateX(5px); /* Schuift iets naar rechts bij hover */
+    transform: translateX(5px);
 }
-
-/* Uitgelichte Artikelen Sectie */
 .featured-articles-section {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
 }
-
 .section-title {
     text-align: center;
     font-size: 2.2rem;
@@ -159,7 +130,6 @@ body {
     margin-bottom: 30px;
     position: relative;
 }
-
 .section-title::after {
     content: '';
     display: block;
@@ -168,14 +138,11 @@ body {
     background-color: #004d00;
     margin: 10px auto 0;
 }
-
 .articles-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
-
-/* Animatie voor de artikelkaarten */
 .article-card {
     background-color: #fff;
     border-radius: 10px;
@@ -183,37 +150,30 @@ body {
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .article-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
-
 .article-img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     transition: transform 0.5s ease;
 }
-
 .article-card:hover .article-img {
     transform: scale(1.05); /* Zoomt in op de afbeelding bij hover */
 }
-
 .article-content {
     padding: 20px;
 }
-
 .article-content h3 {
     margin: 0 0 10px;
     color: #004d00;
 }
-
 .article-content p {
     color: #555;
     font-size: 0.95rem;
 }
-
 .read-more {
     display: inline-block;
     margin-top: 10px;
@@ -222,12 +182,9 @@ body {
     text-decoration: none;
     transition: color 0.3s ease;
 }
-
 .read-more:hover {
     text-decoration: underline;
 }
-
-/* Footer Stijlen */
 .main-footer {
     text-align: center;
     padding: 20px;
@@ -235,8 +192,6 @@ body {
     color: #fff;
     margin-top: 40px;
 }
-
-/* Media Queries voor mobiele weergave (overgenomen van de vorige versie) */
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
@@ -270,10 +225,6 @@ body {
         font-size: 1.2rem;
     }
 }
-
-/* Definities van de animaties (@keyframes) */
-
-/* Fade-in animatie voor secties */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -282,8 +233,6 @@ body {
         opacity: 1;
     }
 }
-
-/* Op en neer 'stuiter' animatie voor iconen */
 @keyframes iconBounce {
     from {
         transform: translateY(0);
