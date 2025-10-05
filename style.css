@@ -6,6 +6,8 @@ body {
     color: #333;
     line-height: 1.6;
 }
+
+/* --- HEADER EN NAVIGATIE --- */
 .main-header {
     background-color: #004d00;
     color: #fff;
@@ -13,6 +15,7 @@ body {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .header-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -22,17 +25,20 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
+
 .site-title {
     margin: 0;
     font-size: 2.5rem;
     font-weight: bold;
 }
+
 .main-nav {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
+
 .nav-item {
     color: #fff;
     text-decoration: none;
@@ -42,10 +48,13 @@ body {
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
 .nav-item:hover, .nav-item.active {
     background-color: #003300;
     transform: scale(1.05);
 }
+
+/* --- HERO SECTIE --- */
 .hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/hero.jpg') no-repeat center center/cover;
     color: #fff;
@@ -54,17 +63,20 @@ body {
     margin-bottom: 40px;
     animation: fadeIn 1s ease-in-out;
 }
+
 .hero-content h2 {
     font-size: 4rem;
     margin: 0 0 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+
 .hero-content p {
     font-size: 1.5rem;
     max-width: 800px;
     margin: 0 auto 30px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
+
 .hero-button {
     display: inline-block;
     background-color: #004d00;
@@ -76,10 +88,13 @@ body {
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
 .hero-button:hover {
     background-color: #003300;
     transform: translateY(-3px); 
 }
+
+/* --- INFO GRID SECTIE (LIVE SCORES) --- */
 .info-grid-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -89,6 +104,7 @@ body {
     padding: 0 20px;
     text-align: center;
 }
+
 .info-grid-item {
     background-color: #fff;
     padding: 30px;
@@ -96,16 +112,19 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .info-grid-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+
 .info-grid-item i {
     font-size: 2.5rem;
     color: #004d00;
     margin-bottom: 15px;
-    animation: iconBounce 1s infinite alternate; /* Subtiele op en neer animatie */
+    animation: iconBounce 1s infinite alternate;
 }
+
 .grid-link {
     display: inline-block;
     margin-top: 15px;
@@ -114,15 +133,20 @@ body {
     text-decoration: none;
     transition: color 0.3s ease, transform 0.2s ease;
 }
+
 .grid-link:hover {
     color: #003300;
     transform: translateX(5px);
 }
+
+/* --- SECTIE TITELS (GELDEN VOOR NIEUWS EN CLUBS) --- */
 .featured-articles-section {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
 }
+
+/* Oude klasse */
 .section-title {
     text-align: center;
     font-size: 2.2rem;
@@ -130,6 +154,7 @@ body {
     margin-bottom: 30px;
     position: relative;
 }
+
 .section-title::after {
     content: '';
     display: block;
@@ -138,42 +163,84 @@ body {
     background-color: #004d00;
     margin: 10px auto 0;
 }
-.articles-grid {
+
+/* Nieuwe klasse voor consistentie met Eredivisie pagina */
+.section-header {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #004d00;
+    margin-bottom: 30px;
+    position: relative;
+    padding-top: 40px;
+}
+
+.section-header h2 {
+    font-size: 2.2rem;
+    color: #004d00;
+    margin: 0;
+}
+
+.section-header p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.section-header::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #004d00;
+    margin: 10px auto 0;
+}
+
+
+/* --- ARTIKELEN/NIEUWS SECTIE --- */
+.articles-grid { /* Algemene nieuws grid */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
-.article-card {
+
+.article-card { /* Algemeen nieuws kaart */
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .article-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+
 .article-img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     transition: transform 0.5s ease;
 }
+
 .article-card:hover .article-img {
-    transform: scale(1.05); /* Zoomt in op de afbeelding bij hover */
+    transform: scale(1.05);
 }
+
 .article-content {
     padding: 20px;
 }
+
 .article-content h3 {
     margin: 0 0 10px;
     color: #004d00;
 }
+
 .article-content p {
     color: #555;
     font-size: 0.95rem;
 }
+
 .read-more {
     display: inline-block;
     margin-top: 10px;
@@ -182,9 +249,149 @@ body {
     text-decoration: none;
     transition: color 0.3s ease;
 }
+
 .read-more:hover {
     text-decoration: underline;
 }
+
+/* NIEUWE: Eredivisie Nieuws styling (Hergebruikt .article-card stijl) */
+.news-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.news-grid-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.news-item {
+    /* Gebruikt de styling van .article-card */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.news-item img {
+    /* Gebruikt de styling van .article-img */
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.news-item:hover img {
+    transform: scale(1.05);
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-content h3 {
+    margin: 0 0 10px;
+    color: #004d00;
+    font-size: 1.4rem;
+}
+
+.news-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #004d00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.news-link:hover {
+    text-decoration: underline;
+}
+
+/* --- CLUBS SECTIE --- */
+.club-grid-section {
+    /* Hergebruik van .info-grid-section met aanpassing voor clubs */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.club-item {
+    /* Gebruikt de basisstijl van .info-grid-item */
+    background-color: #fff;
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.club-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.club-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.club-item h3 {
+    margin: 5px 0 2px 0;
+    font-size: 1.2rem;
+    color: #004d00;
+}
+
+.club-item p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+}
+
+/* --- KNOPPEN ONDER SECTIES --- */
+.view-all-button {
+    text-align: center;
+    padding: 20px;
+}
+
+.secondary-button {
+    /* Stijl voor de 'Alle 18 Clubs' knop */
+    background-color: #fff;
+    color: #004d00;
+    border: 2px solid #004d00;
+    padding: 12px 25px;
+    display: inline-block; /* Zorgt dat de styling van hero-button overgenomen kan worden */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+
+.secondary-button:hover {
+    background-color: #e6e6e6;
+    color: #003300;
+    border-color: #003300;
+    transform: translateY(-3px);
+}
+
+/* --- FOOTER --- */
 .main-footer {
     text-align: center;
     padding: 20px;
@@ -192,6 +399,8 @@ body {
     color: #fff;
     margin-top: 40px;
 }
+
+/* --- MEDIA QUERIES (RESPONSIVE) --- */
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
@@ -225,6 +434,15 @@ body {
         font-size: 1.2rem;
     }
 }
+
+@media (max-width: 600px) {
+    .club-grid-section {
+        /* Clubs op mobiel in twee kolommen */
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+}
+
+/* --- ANIMATIES --- */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -233,6 +451,7 @@ body {
         opacity: 1;
     }
 }
+
 @keyframes iconBounce {
     from {
         transform: translateY(0);
