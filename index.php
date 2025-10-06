@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voetbal Site: Hoofdpagina</title>
+    <title>De Voetbal Site: Hoofdpagina</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="main-header">
         <div class="header-content">
-            <h1 class="site-title">Voetbal Site</h1>
+            <h1 class="site-title">De Voetbal Site</h1>
             <nav class="main-nav">
                 <a href="index.php" class="nav-item active">Home</a>
                 <a href="hetspel.php" class="nav-item">Het Spel</a>

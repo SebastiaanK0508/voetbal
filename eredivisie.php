@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voetbal Site: Eredivisie</title>
+    <title>De Voetbal Site: Eredivisie</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="main-header">
         <div class="header-content">
-            <h1 class="site-title">Voetbal Site</h1>
+            <h1 class="site-title">De Voetbal Site</h1>
             <nav class="main-nav">
                 <a href="index.php" class="nav-item">Home</a>
                 <a href="hetspel.php" class="nav-item">Het Spel</a>
@@ -37,7 +37,7 @@
                     <i class="icon-live">⚽</i>
                     <h3>Live Uitslagen</h3>
                     <p>Blijf op de hoogte van de scores van alle lopende wedstrijden, minuut na minuut.</p>
-                    <a href="#" class="grid-link">Bekijk de scores &rarr;</a>
+                    <a href="live-scores.php" class="grid-link">Bekijk de scores &rarr;</a>
                 </div>
             </div>
         </section>
